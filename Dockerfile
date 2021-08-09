@@ -2,7 +2,7 @@
 FROM jupyter/scipy-notebook 
 
 # Criar diretorio ?
-RUN mkdir my-model
+RUN mkdir my-model2
 # Diretorio para criar meu container
 ENV MODEL_DIR = /home/vpb/CICD/JenkinsHelloWorld
 ENV MODEL_FILE_LDA = clf_lda.joblib
