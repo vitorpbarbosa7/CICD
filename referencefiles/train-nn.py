@@ -54,6 +54,11 @@ def train():
     # Load and Run model
     clf_nn = load(MODEL_PATH_NN)
     
+    resultnn = int(clf_nn.score(X_test, y_test)*100)
+
+    with open('resultnn.txt', 'w') as f:
+        f.write(str(resultnn))
+
     print(int(clf_nn.score(X_test, y_test)*100))
 
 if __name__ == '__main__':
