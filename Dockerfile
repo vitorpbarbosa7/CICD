@@ -1,10 +1,10 @@
 # Reference docker image is jupyter/scipy-notebook
 FROM jupyter/scipy-notebook 
 
-# Criar diretrio ?
+# Criar diretorio ?
 RUN mkdir my-model
 # Diretorio para criar meu container
-ENV MODEL_DIR = /home/vpb/CICD
+ENV MODEL_DIR = /home/vpb/CICD/JenkinsHelloWorld
 ENV MODEL_FILE_LDA = clf_lda.joblib
 ENV MODEL_FILE_NN = clf_nn.joblib
 
